@@ -5,8 +5,14 @@
 # Home page
 GET     /                                       Start.index
 GET     /dashboard                              Dashboard.index
+GET     /dashboard/{id}/deletetodo/{todoid}     Dashboard.deleteTodo
 GET     /about                                  About.index
-GET     /dashboard/deletetodo/{id}              Dashboard.deleteTodo
+
+GET    /signup                                  Accounts.signup
+GET    /login                                   Accounts.login
+POST   /register                                Accounts.register
+POST   /authenticate                            Accounts.authenticate
+GET    /logout                                  Accounts.logout
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
